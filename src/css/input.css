@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Poppins'; /* Beri nama untuk font Anda */
+  src: url('../../assets/fonts/Poppins-Regular.woff') format('woff'); /* Path ke file font */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rowdies'; /* Beri nama untuk font Anda */
+  src: url('../../assets/fonts/Rowdies-Bold.woff') format('woff'); /* Path ke file font */
+  font-style: normal;
+}
+@theme {
+    --color-primary:rgba(221, 216, 193, 1);
+    --color-secondary:rgba(103, 72, 50, 1);
+    --color-darkblue:rgba(47, 43, 66, 1);
+    --font-poppins: 'Poppins';
+    --font-header:'Rowdies';
+}
+
+@layer components{
+  .active {
+    @apply border-b-3
+  }
+}
+
+@layer base {
+  h1{
+    @apply text-[60px] font-header text-darkblue tracking-[15]
+  }
+  h2{
+    @apply text-[36px] font-header text-darkblue tracking-[5]
+  }
+  h3{
+    @apply text-[24px] font-header text-darkblue tracking-[5]
+  }
+  p{
+    @apply text-[20px] font-poppins text-darkblue
+  }
+}
+
+
+
+
