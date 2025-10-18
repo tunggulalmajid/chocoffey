@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./src/css/output.css" />
     <link rel="icon" href="./assets/img/LOGOCHC.png" />
   </head>
-  <body class="bg-primary text-white pb-20">
+  <body class="bg-primary text-white">
     <!-- nav start -->
     <nav
-      class="bg-secondary rounded-b-2xl py-5 shadow-xl px-5 md:px-15 lg:px-20 flex items-center justify-between"
+      class="bg-secondary rounded-b-2xl py-5 shadow-xl px-5 md:px-15 lg:px-20 flex items-center justify-between sticky top-0"
     >
       <img
         src="./assets/img/nav-choco.png"
@@ -21,16 +21,18 @@
       <div
         class="nav-list font-poppins font-bold hidden md:flex gap-5 lg:gap-12"
       >
-        <a href="#" class="hover:opacity-75 active">Home</a>
-        <a href="#" class="hover:opacity-75">About</a>
-        <a href="#" class="hover:opacity-75">Menu</a>
-        <a href="#" class="hover:opacity-75">Order</a>
+        <a href="#hero" class="hover:opacity-75 active">Home</a>
+        <a href="#about" class="hover:opacity-75">About</a>
+        <a href="#menu" class="hover:opacity-75">Menu</a>
+        <a href="#team" class="hover:opacity-75">Team</a>
+        <a href="#order" class="hover:opacity-75">Order</a>
       </div>
     </nav>
     <!-- nav end -->
 
     <!-- hero start -->
     <section
+      id="hero"
       class="flex flex-col-reverse text-center lg:text-start lg:flex-row items-center justify-center gap-10 xl:gap-60 mt-20"
     >
       <div>
@@ -42,14 +44,14 @@
           Menghadirkan Perpaduan Rasa Coklat dengan Kopi
         </p>
         <div class="flex gap-3 mt-5 justify-center lg:justify-start">
-          <a href="">
+          <a href="#order" class="">
             <button
               class="bg-secondary p-1 w-30 md:w-40 rounded-lg font-header h-10"
             >
               ORDER
             </button>
           </a>
-          <a href="">
+          <a href="" class="">
             <button
               class="bg-secondary p-1 w-35 md:w-40 rounded-lg font-header h-10"
             >
@@ -67,24 +69,28 @@
     <!-- hero end -->
 
     <!--about-start -->
-    <section class="mt-50">
-      <h2 class="text-center">ABOUT</h2>
-      <div class="">
-        <p>
+    <section class="mt-50" id="about">
+      <h2 class="text-center text-[20px] md:text-[36px]">ABOUT</h2>
+      <div
+        class="bg-secondary py-10 px-10 w-75 md:w-175 lg:w-300 mx-auto rounded-xl text-justify mt-15  "
+      >
+        <p class="text-white text-[14px] md:text-[20px]">
           Kisah Chocoffey lahir dari sebuah ide sederhana menyatukan dua
           anugerah alam yang paling kita cintai, kopi dan cokelat. Bagi kami,
           aroma kopi Nusantara dan manisnya cokelat adalah warisan budaya yang
           tak ternilai. Kami melihat ada sebuah potensi rasa yang luar biasa di
           antara keduanya yang belum banyak dijelajahi.
         </p>
-        <p>
+        <br />
+        <p class="text-white text-[14px] md:text-[20px]">
           Kami percaya bahwa kenikmatan sejati datang dari kualitas. Karena
           itulah Chocoffey hadir sebagai jawaban bagi Anda yang mencari
           pengalaman rasa baru tanpa kompromi. Kami ingin memanjakan lidah Anda
           dengan minuman dan makanan yang dibuat sepenuh hati, mengutamakan
           kualitas bahan baku lokal terbaik.
         </p>
-        <p>
+        <br />
+        <p class="text-white text-[14px] md:text-[20px]">
           Setiap produk yang sampai ke tangan Anda adalah hasil dari proses
           seleksi kami yang cermat, memastikan setiap tegukan dan gigitannya
           memberikan kepuasan yang tak terlupakan.
@@ -92,6 +98,166 @@
       </div>
     </section>
     <!--about-end -->
+
+    <!-- menu start -->
+    <section class="mt-75" id="menu">
+      <h2 class="text-center text-[20px] md:text-[36px]">OUR MENU</h2>
+      <div
+        class="border-3 border-secondary w-75 md:w-175 lg:w-300 mx-auto p-15 mt-10 rounded-xl flex flex-col gap-20 items-center justify-center"
+      >
+        <div class="flex flex-col md:flex-row items-center justify-center gap-15">
+          <img src="./assets/img/rotikopi.png" alt="" />
+          <div>
+            <h3>COFEE TOAST</h3>
+            <p>
+              Roti hangat dengan lapisan kopi krispi di bagian atas dan isian
+              mentega gurih yang lumer di dalamnya. Rasakan sensasi renyah di
+              luar dan super lembut di dalam.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-15">
+          <img src="./assets/img/roticoklat.png" alt="" />
+          <div>
+            <h3>CHOCO TOAST</h3>
+            <p>
+              Roti hangat dengan lapisan topping cokelat yang renyah di bagian
+              atas. Nikmati sensasi garing di luar berpadu dengan roti super
+              lembut dan isian mentega gurih di dalamnya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-3 border-secondary w-75 md:w-175 lg:w-300 mx-auto p-15 mt-10 rounded-xl flex flex-col gap-20 items-center justify-center"
+      >
+        <div class="flex items-center justify-center gap-15">
+          <img src="./assets/img/minumkopi.png" alt="" />
+          <div>
+            <h3>COFFE DRINK</h3>
+            <p>
+              Kesegaran klasik untuk semangat barumu. Rasa kopi yang kuat
+              berpadu sempurna dengan lembutnya susu.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-15">
+          <img src="./assets/img/minumcoklat.png" alt="" />
+          <div>
+            <h3>CHOCO DRINK</h3>
+            <p>
+              Kelezatan cokelat klasik dalam segelas kesegaran. Kaya rasa,
+              creamy, dan selalu jadi pilihan yang tepat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center text-[20px] md:text-[36px] mt-15">BUNDLING</h2>
+      <div class="mt-15 flex gap-5 justify-center">
+        <div
+          class="border-3 border-secondary rounded-xl w-145 p-15 flex flex-col items-center justify-center gap-8"
+        >
+          <h3 class="text-center">COFEE LOVER</h3>
+          <img src="./assets/img/bunkopi.png" alt="" />
+        </div>
+        <div
+          class="border-3 border-secondary rounded-xl w-145 p-15 flex flex-col items-center justify-center gap-8"
+        >
+          <h3 class="text-center">COFEE LOVER</h3>
+          <img src="./assets/img/bunkopi.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- menu end -->
+
+    <!-- team start -->
+    <section class="mt-75" id="team">
+      <h2 class="text-center text-[20px] md:text-[36px]">OUR TEAM</h2>
+      <div class="flex flex-col gap-40 mt-20">
+        <div class="flex gap-40 justify-center">
+          <img src="./assets/img/dimas.png" alt="" />
+          <img src="./assets/img/tung.png" alt="" />
+        </div>
+        <div class="flex gap-40 justify-center">
+          <img src="./assets/img/raf.png" alt="" />
+          <img src="./assets/img/roi.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- team end -->
+
+    <!-- order start -->
+    <section>
+      <h2 class="text-center text-[20px] md:text-[36px] mt-75" id="order">ORDER</h2>
+      <div
+        class="border-3 border-secondary w-75 md:w-175 lg:w-300 mx-auto mt-15 rounded-xl p-15"
+      >
+        <form
+          action=""
+          class="flex flex-col items-center gap-10"
+          id="form-order"
+        >
+          <div class="flex flex-col gap-3">
+            <h3>NAMA</h3>
+            <input
+              type="text"
+              id="nama"
+              class="bg-secondary rounded-xl w-275 h-12 p-5 text-lg"
+              required
+            />
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3>ORDER</h3>
+            <input
+              type="text"
+              id="order-text"
+              class="bg-secondary rounded-xl w-275 h-50 p-5 text-lg"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="bg-secondary rounded-xl w-100 h-15 font-header tracking-[3px] mt-15"
+          >
+            PESAN
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- order end -->
+
+    <!-- footer start -->
+    <footer class="mt-75 bg-secondary p-8 rounded-t-xl shadow-lg">
+      <div class="flex justify-around items-center gap-10">
+        <div>
+          <img src="./assets/img/nav-choco.png" alt="" />
+          <div class="flex items-center">
+            <img src="./assets/img/loc.png" alt="" />
+            <p class="text-white text-sm max-w-100 font-light">
+              Kecamatan Sumbersari, Kabupaten Jember,Provinsi Jawa
+              timur,Indonesia
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-white">CONTACT</h3>
+          <div class="flex items-center gap-2">
+            <img src="./assets/img/ig.png" alt="" />
+            <p class="text-white">choco_ffey</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/img/wa.png" alt="" />
+            <p class="text-white">083856842965</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-[13px] text-white text-center mt-25">
+        &copy; Created For Chocoffey by almajed 2025
+      </p>
+    </footer>
+    <!-- footer end -->
 
     <script src="./src/js/jquery-3.7.1.min.js"></script>
     <script src="./src/js/script.js"></script>
