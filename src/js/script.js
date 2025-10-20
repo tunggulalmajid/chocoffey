@@ -35,3 +35,9 @@ $(function () {
     sebuahorder.val("");
   });
 });
+
+$(function () {
+  $("#menu-icon").on("click", function () {
+    $("#menu-list").toggleClass("hidden flex flex-col");
+  });
+});

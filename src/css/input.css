@@ -41,4 +41,7 @@
   button {
     @apply cursor-pointer hover:scale-105 hover:opacity-80;
   }
+  .hidden-tab {
+    @apply hidden;
+  }
 }
