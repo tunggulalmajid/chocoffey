@@ -1,0 +1,6 @@
+# Izinkan semua bot
+User-agent: *
+Allow: /
+
+# Tunjukkan lokasi Sitemap
+Sitemap: https://chocoffey.my.id/sitemap.xml
