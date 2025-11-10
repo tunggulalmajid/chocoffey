@@ -6,7 +6,9 @@ $(function () {
   navLinks.on("click", function () {
     navLinks.removeClass("active");
     $(this).addClass("active");
-  });
+  });/*dsadsa
+  dsadsads
+  dxsadsa */
 });
 
 $(function () {
