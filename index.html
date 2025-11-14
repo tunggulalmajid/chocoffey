@@ -1,15 +1,48 @@
 <html lang="en" class="scroll-smooth">
   <head>
+    <script>
+      // (function () {
+      //   if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+      //     window.chatbase = (...arguments) => {
+      //       if (!window.chatbase.q) {
+      //         window.chatbase.q = [];
+      //       }
+      //       window.chatbase.q.push(arguments);
+      //     };
+      //     window.chatbase = new Proxy(window.chatbase, {
+      //       get(target, prop) {
+      //         if (prop === "q") {
+      //           return target.q;
+      //         }
+      //         return (...args) => target(prop, ...args);
+      //       },
+      //     });
+      //   }
+      //   const onLoad = function () {
+      //     const script = document.createElement("script");
+      //     script.src = "https://www.chatbase.co/embed.min.js";
+      //     script.id = "MNTT3Tk2dmgw4vGPBzTIw";
+      //     script.domain = "www.chatbase.co";
+      //     document.body.appendChild(script);
+      //   };
+      //   if (document.readyState === "complete") {
+      //     onLoad();
+      //   } else {
+      //     window.addEventListener("load", onLoad);
+      //   }
+      // })();
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta
       name="Chocoffey"
       content="Chocoffey merupakan sebuah perusahaan yang menjual Makanan dan Minuman berbasis coklat dan kopi"
     />
     <meta
-      name="Chocoffey"
+      name="Chocoffe"
       content="Chocoffey merupakan sebuah perusahaan yang menjual Makanan dan Minuman berbasis coklat dan kopi"
     />
     <meta
-      name="chocoffey merupakan sebuah perusahaan yang menjual Makanan dan Minuman berbasis coklat dan kopi"
+      name="chocoffe merupakan sebuah perusahaan yang menjual Makanan dan Minuman berbasis coklat dan kopi"
       content="Chocoffey merupakan sebuah perusahaan yang menjual Makanan dan Minuman berbasis coklat dan kopi"
     />
     <meta
@@ -33,7 +66,7 @@
   <body class="bg-primary text-white">
     <!-- nav start -->
     <nav
-      class="bg-secondary rounded-b-2xl py-5 shadow-xl px-5 md:px-15 lg:px-20 flex items-center justify-between gap-27 flex-wrap sticky top-0"
+      class="bg-secondary rounded-b-2xl py-5 shadow-xl px-5 md:px-15 lg:px-20 flex items-center justify-between gap-27 flex-wrap sticky top-0 z-50"
     >
       <img
         src="./assets/img/nav-choco.png"
@@ -73,14 +106,18 @@
           Menghadirkan Perpaduan Rasa Coklat dengan Kopi
         </p>
         <div class="flex gap-3 mt-5 justify-center lg:justify-start">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTiXVuJqJDXswZvtw5Jh_IMfvdwJ4NpTQcaQC-KlHOlTLFPw/viewform" class="" target="_blank">
+          <a href="https://bit.ly/CHOCOFFEYOPENPOB2" class="" target="_blank">
             <button
               class="bg-secondary p-1 w-30 md:w-40 rounded-lg font-header h-10"
             >
               ORDER
             </button>
           </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBHHdS-FFVNPpbCEsFQOmi7XN_EDbBcdaKrg4D9vwyFvRIEQ/viewform" class="" target="_blank">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfBHHdS-FFVNPpbCEsFQOmi7XN_EDbBcdaKrg4D9vwyFvRIEQ/viewform"
+            class=""
+            target="_blank"
+          >
             <button
               class="bg-secondary p-1 w-35 md:w-40 rounded-lg font-header h-10"
             >
@@ -98,7 +135,13 @@
     <!-- hero end -->
 
     <!--about-start -->
-    <section class="mt-50" id="about">
+    <section
+      class="mt-75"
+      id="about"
+      data-aos="fade-up"
+      data-delay="50"
+      data-aos-once="true"
+    >
       <h2 class="text-center text-[20px] md:text-[36px]">ABOUT</h2>
       <div
         class="bg-secondary text-center md:text-justify py-10 px-10 w-75 md:w-175 xl:w-300 mx-auto rounded-xl mt-15"
@@ -129,7 +172,13 @@
     <!--about-end -->
 
     <!-- menu start -->
-    <section class="mt-75" id="menu">
+    <section
+      class="mt-125"
+      id="menu"
+      data-aos="fade-up"
+      data-delay="50"
+      data-aos-once="true"
+    >
       <h2 class="text-center text-[20px] md:text-[36px]">OUR MENU</h2>
       <div
         class="border-3 border-secondary w-75 md:w-175 xl:w-300 mx-auto p-5 md:p-15 mt-10 rounded-xl flex flex-col gap-20 items-center justify-center"
@@ -219,7 +268,13 @@
     <!-- menu end -->
 
     <!-- team start -->
-    <section class="mt-75" id="team">
+    <section
+      class="mt-75"
+      id="team"
+      data-aos="fade-up"
+      data-delay="50"
+      data-aos-once="true"
+    >
       <h2 class="text-center text-[20px] md:text-[36px]">OUR TEAM</h2>
       <div class="flex flex-col gap-20 md:gap-40 mt-20">
         <div
@@ -255,7 +310,7 @@
     <!-- team end -->
 
     <!-- order start -->
-    <section>
+    <section data-aos="fade-up" data-delay="50" data-aos-once="true">
       <h2 class="text-center text-[20px] md:text-[36px] mt-75" id="order">
         ORDER
       </h2>
@@ -345,5 +400,9 @@
 
     <script src="./src/js/jquery-3.7.1.min.js"></script>
     <script src="./src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
