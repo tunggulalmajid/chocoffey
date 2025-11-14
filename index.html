@@ -1,36 +1,36 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <script>
-      (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-          window.chatbase = (...arguments) => {
-            if (!window.chatbase.q) {
-              window.chatbase.q = [];
-            }
-            window.chatbase.q.push(arguments);
-          };
-          window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-              if (prop === "q") {
-                return target.q;
-              }
-              return (...args) => target(prop, ...args);
-            },
-          });
-        }
-        const onLoad = function () {
-          const script = document.createElement("script");
-          script.src = "https://www.chatbase.co/embed.min.js";
-          script.id = "MNTT3Tk2dmgw4vGPBzTIw";
-          script.domain = "www.chatbase.co";
-          document.body.appendChild(script);
-        };
-        if (document.readyState === "complete") {
-          onLoad();
-        } else {
-          window.addEventListener("load", onLoad);
-        }
-      })();
+      // (function () {
+      //   if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+      //     window.chatbase = (...arguments) => {
+      //       if (!window.chatbase.q) {
+      //         window.chatbase.q = [];
+      //       }
+      //       window.chatbase.q.push(arguments);
+      //     };
+      //     window.chatbase = new Proxy(window.chatbase, {
+      //       get(target, prop) {
+      //         if (prop === "q") {
+      //           return target.q;
+      //         }
+      //         return (...args) => target(prop, ...args);
+      //       },
+      //     });
+      //   }
+      //   const onLoad = function () {
+      //     const script = document.createElement("script");
+      //     script.src = "https://www.chatbase.co/embed.min.js";
+      //     script.id = "MNTT3Tk2dmgw4vGPBzTIw";
+      //     script.domain = "www.chatbase.co";
+      //     document.body.appendChild(script);
+      //   };
+      //   if (document.readyState === "complete") {
+      //     onLoad();
+      //   } else {
+      //     window.addEventListener("load", onLoad);
+      //   }
+      // })();
     </script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta
@@ -106,11 +106,7 @@
           Menghadirkan Perpaduan Rasa Coklat dengan Kopi
         </p>
         <div class="flex gap-3 mt-5 justify-center lg:justify-start">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdTiXVuJqJDXswZvtw5Jh_IMfvdwJ4NpTQcaQC-KlHOlTLFPw/viewform"
-            class=""
-            target="_blank"
-          >
+          <a href="https://bit.ly/CHOCOFFEYOPENPOB2" class="" target="_blank">
             <button
               class="bg-secondary p-1 w-30 md:w-40 rounded-lg font-header h-10"
             >
